@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新标签页主页</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <button id="theme-toggle" class="theme-toggle-fixed" title="切换浅/深色主题">🌓</button>
+    <div class="container">
+        <div class="search-engine-selector">
+            <div id="engine-buttons" class="engine-buttons">
+                <button type="button" data-engine="google" class="engine-button">
+                    <span class="engine-icon">🔍</span>
+                    <span>Google</span>
+                </button>
+                <button type="button" data-engine="bing" class="engine-button">
+                    <span class="engine-icon">🌐</span>
+                    <span>Bing</span>
+                </button>
+                <button type="button" data-engine="brave" class="engine-button">
+                    <span class="engine-icon">🦁</span>
+                    <span>Brave</span>
+                </button>
+                <button type="button" data-engine="duckduckgo" class="engine-button">
+                    <span class="engine-icon">🦆</span>
+                    <span>Duck</span>
+                </button>
+                <button type="button" data-engine="baidu" class="engine-button">
+                    <span class="engine-icon">🔎</span>
+                    <span>百度</span>
+                </button>
+            </div>
+        </div>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="输入搜索内容..." autofocus>
+            <button type="submit">搜索</button>
+        </form>
+        <div class="shortcuts-section">
+            <h2>快捷方式</h2>
+            <div id="shortcuts"></div>
+            <button id="show-shortcut-dialog" class="add-shortcut-btn" title="添加快捷方式">+</button>
+            <div id="shortcut-dialog" class="shortcut-dialog hidden">
+                <div class="shortcut-dialog-content">
+                    <span class="shortcut-dialog-title">添加快捷方式</span>
+                    <input type="text" id="shortcut-name" placeholder="网站名称" maxlength="16" required>
+                    <input type="text" id="shortcut-url" placeholder="网址（如 qq.com 或 https://qq.com）" required>
+                    <div class="shortcut-dialog-actions">
+                        <button id="confirm-add-shortcut">添加</button>
+                        <button id="cancel-add-shortcut" type="button">取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "自定义新标签页主页",
+    "description": "扩展名称"
+  },
+  "extDesc": {
+    "message": "一个可选搜索引擎和自定义快捷方式的新标签页主页。",
+    "description": "扩展描述"
+  }
+} 

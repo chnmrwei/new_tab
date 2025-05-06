@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "default_locale": "zh_CN",
+  "name": "__MSG_extName__",
+  "version": "1.0.0",
+  "description": "__MSG_extDesc__",
+  "icons": {
+    "128": "icon.svg"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "chrome://newtab/"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["css/main.css", "main.js", "icon.svg"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
